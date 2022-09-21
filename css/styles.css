@@ -24,8 +24,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -38,18 +46,22 @@ img {
   display: flex;
   align-items: center;
 }
-.all-nav {
+.all-nav,
+.nav-list,
+.filter-list {
   display: flex;
-  justify-content: space-between;
 }
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
 }
 .list-item:not(:last-child) {
   margin-right: 50px;
+}
+.contact-list {
+  display: flex;
+  margin-left: auto;
 }
 
 .logo {
@@ -118,10 +130,13 @@ img {
 }
 .hero {
   text-align: center;
+  padding: 200px 0;
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30;
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -166,7 +181,6 @@ img {
 .benefits-title {
   font-size: 14px;
   margin-bottom: 10px;
-  margin: 0;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -187,7 +201,6 @@ img {
 
 .whatwedo-title,
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -197,7 +210,10 @@ img {
 
   color: var(--primary-text-color);
 }
-.whatwedo-list,
+.whatwedo-list {
+  display: flex;
+  gap: 30px;
+}
 .benefit > .list {
   display: flex;
   justify-content: space-around;
@@ -207,9 +223,9 @@ img {
   width: 270px;
 }
 
-.ourteam > .list {
-  flex-direction: row-reverse;
-  justify-content: space-around;
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 .team {
   background: var(--grey-background);
@@ -220,9 +236,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team-name {
+.team-member {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+.team-name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -235,8 +253,7 @@ img {
   color: var(--primary-text-color);
 }
 .team-text {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
   /* identical to box height */
@@ -279,7 +296,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   padding: 6px 22px;
-  margin-bottom: 50px;
   cursor: pointer;
 }
 .button-filter:focus,
@@ -295,11 +311,13 @@ img {
 }
 .filter-list {
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-list > .buttons:not(:last-child) {
   margin-right: 8px;
 }
 .list.project {
+  display: flex;
   flex-wrap: wrap;
 }
 .project-title {
@@ -349,9 +367,9 @@ img {
   padding: 0;
 }
 .list-footer-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-.adress-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
